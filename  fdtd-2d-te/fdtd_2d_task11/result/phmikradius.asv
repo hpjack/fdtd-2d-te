@@ -1,0 +1,15 @@
+function [Ex] = pro2;
+
+pars = csvread('pars.txt');
+ds = pars(7);
+
+d = 0.25e-6;
+L = 3e-6;
+n = 2.83;
+N = floor(2.5e-6 / ds);
+for i=1:N
+    t1 = d * n  / ()
+    r(i)= * (1 - 1 / cosh(pi * i * ds / 2 / L));
+end
+x = (1:N).*(ds*10^6);
+plot(r, x);
